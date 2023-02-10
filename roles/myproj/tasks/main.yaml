@@ -1,0 +1,8 @@
+- name: -----------command modual--------------
+  command: cat /home/dir1/file1
+  register: catty
+  tags: command_mod
+  
+- name: -----------show catty--------------
+  debug:
+    msg: "{{catty}}"
